@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>SK</h1>
+        <nav class="nav">
+            <a href="port.html">Home</a>
+            <a href="b.html">About Me</a>
+            <a href="shiva website.html">Resume</a>
+            <a href="Contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h3>Hello, It's me</h3>
+            <h1>Shiva Krishna</h1>
+            <h3>And I'm a Frontend Developer</h3>
+            <div class="info">
+                <img src="shiva.jpj.jpg" alt="Shiva Krishna">
+            </div>
+            <div class="apart">
+                <a href="https://www.linkedin.com/in/shivakrishnaediga/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/shivakrishnaediga"><i class="fab fa-github-alt"></i></a><br>
+				<button class="button" onclick="downloadResume()">Download Resume</button>
+            </div>
+        </section>
+    </main>
+	<script>
+        function downloadResume() {
+            var htmlContent = document.documentElement.outerHTML;
+            var blob = new Blob([htmlContent], { type: 'text/html' });
+            var a = document.createElement('a');
+            a.href = window.URL.createObjectURL(blob);
+            a.download = 'Resume_shiva.pdf';
+            a.click();
+            window.URL.revokeObjectURL(a.href);
+        }
+    </script>
+</body>
+</html>

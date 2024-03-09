@@ -1,0 +1,72 @@
+<html>
+<head>
+<style>
+.contact h2{
+	margin-bottom: 48px;
+}
+.contact form{
+	text-align:center;
+	margin: 16px auto;
+	max-width:70rem;
+	margin-bottom:48px;
+}
+.contact form .input-box{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+.contact form .input-box input, .contact form textarea{
+	width:100%;
+	padding:24px;
+	font-size:26px;
+	color:white;
+	background-color:#262B40;
+	border-radius: 14px;
+	margin:12px 0;
+}
+.contact form .input-box input{
+	width:49%;
+}
+.contact form textarea{
+	resize:none;
+}
+.contact form .btn{
+	margin-top:32px;
+	cursor:pointer;
+}.heading span{
+	color:#59B2F4;
+}
+.btn{
+	display: inline-block;
+	padding: 16px 44px;
+	background-color:#59B2F4;
+	box-shadow: 0 0 16px #59B2F4;
+	border-radius: 64px;
+	font-size:26px;
+	color:#191f36;
+	letter-spacing: 1.6px;
+	font-weight: 600;
+	transition: .5s ease;
+}
+.btn:hover{
+	box-shadow:none;
+}
+</style>
+</head>
+<body>
+ <section class="contact" id="contact">
+<h2 class="heading">Contact<span> Me</span></h2>
+<form action="#">
+<div class="input-box">
+<input type="text" placeholder="Full Name"> 
+<input type="email" placeholder="Email address">
+</div>
+<div class="input-box">
+<input type="number" placeholder="Mobile number"> 
+<input type="text" placeholder="Email subject">
+</div>
+<textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+<input type="submit" value="Send message" class="btn">
+</form>
+</body>
+</html>
